@@ -30,13 +30,11 @@ const CartProvider: React.FC = ({ children }) => {
   // Buscando produtos armazenados no AsyncStorage
   useEffect(() => {
     async function loadProducts(): Promise<void> {
-      const cartProducts = await AsyncStorage.getItem(
-        '@GoMarketplace:cartProducts',
-      );
+      const cartProducts = await AsyncStorage.clear()
 
-      if (cartProducts) {
-        setProducts([...JSON.parse(cartProducts)]);
-      }
+      // if (cartProducts) {
+      //   setProducts([...JSON.parse(cartProducts)]);
+      // }
     }
 
     loadProducts();
@@ -86,7 +84,7 @@ const CartProvider: React.FC = ({ children }) => {
   const decrement = useCallback(
     async id => {
       const newProducts = products.map(p =>
-        p.id === id ? { ...p, quantity: p.quantity - 1 } : p,
+        p.id === id ? { ...p, quantity: p.quantity <= 0 ? p.quantity : p.quantity - 1 } : p,
       );
 
       setProducts(newProducts);

@@ -1,5 +1,5 @@
-import styled from 'styled-components/native';
 import { FlatList } from 'react-native';
+import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
@@ -19,7 +19,7 @@ export const ProductList = styled(FlatList)`
 `;
 
 export const Product = styled.View`
-  background: #fff;
+  background: #212121;
   padding: 15px 10px;
   border-radius: 5px;
   margin: 5px;
@@ -27,7 +27,9 @@ export const Product = styled.View`
   flex-direction: row;
 `;
 
-export const ProductImage = styled.Image`
+export const ProductImage = styled.Image.attrs({
+  resizeMode: 'contain'
+})`
   height: 92px;
   width: 92px;
 `;
@@ -35,10 +37,12 @@ export const ProductImage = styled.Image`
 export const ProductTitleContainer = styled.View`
   font-size: 16px;
   margin-left: 5px;
+  color: #bdbdbd;
 `;
 
 export const ProductTitle = styled.Text`
   font-size: 16px;
+  color: #bdbdbd;
 `;
 
 export const ProductPriceContainer = styled.View`
@@ -52,16 +56,15 @@ export const TotalContainer = styled.View`
 
 export const ProductSinglePrice = styled.Text`
   font-size: 12px;
-  color: #a0a0b3;
+  color: #bdbdbd;
   margin-top: 8px;
 `;
 
 export const ProductPrice = styled.Text`
-  font-weight: bold;
   margin-top: 5px;
 
   font-size: 16px;
-  color: #e83f5b;
+  color: #7cb342;
 `;
 
 export const ProductQuantity = styled.Text`
@@ -70,7 +73,7 @@ export const ProductQuantity = styled.Text`
   margin-right: 10px;
 
   font-size: 16px;
-  color: #e83f5b;
+  color: #7cb342;
 `;
 
 export const ActionContainer = styled.View`
@@ -82,7 +85,7 @@ export const ActionContainer = styled.View`
 `;
 
 export const ActionButton = styled.TouchableOpacity`
-  background: rgba(232, 63, 91, 0.1);
+  background: rgba(124, 179, 66, 0.1);
   border-radius: 5px;
   padding: 12px;
   margin-bottom: 5px;
@@ -93,7 +96,7 @@ export const TotalProductsContainer = styled.View`
   bottom: 0px;
 
   flex-direction: row;
-  background: #e83f5b;
+  background: #7cb342;
 
   padding: 20px 40px;
   justify-content: space-between;

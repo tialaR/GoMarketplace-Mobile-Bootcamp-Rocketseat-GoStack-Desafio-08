@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { View } from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
+import FloatingCart from '../../components/FloatingCart';
 import { useCart } from '../../hooks/cart';
 import formatValue from '../../utils/formatValue';
 import {
@@ -17,10 +18,8 @@ import {
   ProductSinglePrice,
   ProductTitle,
   ProductTitleContainer,
-  SubtotalValue,
-  TotalContainer,
-  TotalProductsContainer,
-  TotalProductsText
+
+  TotalContainer
 } from './styles';
 
 interface Product {
@@ -94,24 +93,20 @@ const Cart: React.FC = () => {
                   testID={`increment-${item.id}`}
                   onPress={() => handleIncrement(item.id)}
                 >
-                  <FeatherIcon name="plus" color="#E83F5B" size={16} />
+                  <FeatherIcon name="plus" color="#7cb342" size={16} />
                 </ActionButton>
                 <ActionButton
                   testID={`decrement-${item.id}`}
                   onPress={() => handleDecrement(item.id)}
                 >
-                  <FeatherIcon name="minus" color="#E83F5B" size={16} />
+                  <FeatherIcon name="minus" color="#7cb342" size={16} />
                 </ActionButton>
               </ActionContainer>
             </Product>
           )}
         />
       </ProductContainer>
-      <TotalProductsContainer>
-        <FeatherIcon name="shopping-cart" color="#fff" size={24} />
-        <TotalProductsText>{`${totalItensInCart} itens`}</TotalProductsText>
-        <SubtotalValue>{cartTotal}</SubtotalValue>
-      </TotalProductsContainer>
+      <FloatingCart />
     </Container>
   );
 };

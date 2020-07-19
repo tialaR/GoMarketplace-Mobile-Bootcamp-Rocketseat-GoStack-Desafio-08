@@ -2,27 +2,27 @@
   "products": [
     {
       "id": "123",
-      "title": "Nome do produto 01",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 50
+      "title": "Fone Skullcandy 01",
+      "image_url": "https://geekchic.com.br/wp-content/uploads/2014/11/Skullcandy-Mockingjay.png",
+      "price": 100
     },
     {
       "id": "1234",
-      "title": "Nome do produto 02",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 60
+      "title": "Fone Skullcandy 02",
+      "image_url": "https://www.uokpl.rs/fpng/f/396-3969285_skullcandy-crusher-wireless.png",
+      "price": 150.40
     },
     {
       "id": "12345",
-      "title": "Nome do produto 03",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 70
+      "title": "Fone Skullcandy 03",
+      "image_url": "https://www.vippng.com/png/full/269-2691939_skullcandy-aviator-headphones-skullcandy-aviators.png",
+      "price": 305
     },
     {
       "id": "123456",
-      "title": "Nome do produto 04",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 80
+      "title": "Fone Skullcandy 04",
+      "image_url": "https://www.pngkit.com/png/full/325-3259459_skullcandy-mix-master-dj-headphones-turtle-beach-stealth.png",
+      "price": 106.99
     }
   ]
 }
