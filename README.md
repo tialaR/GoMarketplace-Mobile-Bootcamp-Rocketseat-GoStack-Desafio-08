@@ -1,4 +1,4 @@
-# GoMarketplace
+# 🚀 GoMarketplace
 
 <p>Nesse desafio, desenvolvi uma nova aplicação, a GoMarketplace. Dessa vez pratiquei
 o que aprendi até agora no React Native junto com o TypeScript na Bootcamp da Rocketseat, 
