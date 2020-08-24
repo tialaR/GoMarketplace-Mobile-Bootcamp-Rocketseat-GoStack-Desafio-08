@@ -1,10 +1,10 @@
 # 🚀 GoMarketplace
 
-<p>Nesse desafio, desenvolvi uma nova aplicação, a GoMarketplace. Dessa vez pratiquei
-o que aprendi até agora no React Native junto com o TypeScript na Bootcamp da Rocketseat, 
-utilizando rotas, Async Storage e a Context API. </p>
-<p>:sunglasses: &nbsp;&nbsp Fiz algumas alterações no tema para inserir um pouco da minha identidade a essa aplicação 
-e esse foi o resultado: </p>
+<p>In this challenge, I developed a new application, GoMarketplace. This time I practiced
+what I’ve learned so far in React Native along with TypeScript in Rocketseat’s Bootcamp,
+using routes, Async Storage and the Context API. </p>
+<p>:sunglasses: &nbsp;&nbsp I made some changes to the theme to insert some of my identity to that application
+and that was the result: </p>
 
 ![](tela1.png) ![](tela2.png)
 
